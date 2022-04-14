@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 bg-danger left-panel">
+        <FileSearch
+          title="我的云文档"
+          @search="handleSearch"
+        />
+      </div>
+      <div class="col-9 bg-primary right-panel">right</div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import FileSearch from '../components/FileSearch.vue'
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  components: { FileSearch },
+  setup () {
+    function handleSearch (payload) {
+      // todo: search handle
+      console.log(payload)
+    }
+    return {
+      handleSearch
+    }
   }
 }
 </script>
+
+<style lang="scss">
+</style>
