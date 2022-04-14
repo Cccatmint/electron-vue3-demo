@@ -69,7 +69,6 @@ export default {
 
 <style lang="scss" scoped>
 .file-search-container {
-  height: 100%;
   min-height: 42px;
   background-color: #98DBD2;
 }
