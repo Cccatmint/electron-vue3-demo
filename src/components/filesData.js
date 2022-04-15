@@ -1,20 +1,11 @@
-export const defaultFiles = [
-  {
-    id: '1',
-    title: 'first post first post first postfirst postfirst postfirst postfirst post',
-    body: 'should be aware of this',
-    createdAt: 1563762965704
-  },
-  {
-    id: '2',
-    title: 'second post',
-    body: '## this is title',
-    createdAt: 1563762965704
-  },
-  {
-    id: '3',
-    title: 'third post',
-    body: '## third post',
-    createdAt: 1563762965704
+
+const arr = new Array(999).fill(0).map((item, index) => index)
+const defaultFiles = arr.map(item => {
+  return {
+    id: item.toString(),
+    title: `title ---------------------------- ${item}`,
+    body: `## body of post ${item}`,
+    createdAt: 1650003452234
   }
-]
+})
+export { defaultFiles }

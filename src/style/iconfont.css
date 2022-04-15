@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3291153 */
-  src: url('//at.alicdn.com/t/font_3291153_kbjg49v74x.woff2?t=1649952685375') format('woff2');
+  src: url('//at.alicdn.com/t/font_3291153_xpfnd7lbz1.woff2?t=1649990378942') format('woff2');
 }
 
 .iconfont {
@@ -9,6 +9,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dot:before {
+  content: "\e63d";
 }
 
 .icon-import:before {
